@@ -1,0 +1,12 @@
+<h2>Data from external  json through httpclient</h2>
+<button type="button" (click)="fetchData()">Make Request</button>
+<button type="button" (click)="clearData()">Delete Request</button>
+<ul *ngFor="let da of just">
+
+<span *ngIf="king">
+<li>{{da.userId}}</li>
+<li>{{da.id}}</li>
+<li>{{da.title}}</li>
+<li>{{da.body}}</li>
+</span>
+</ul>
